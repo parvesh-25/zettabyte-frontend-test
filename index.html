@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: '#4499DF',
+                        grey: '#B4B6B5',
+                        darkGrey: '#3D4150',
+                        white: '#F5F5F5',
+                    }
+                }
+            }
+        }
+
+
+        function showAlert() {
+            alert('Success!');
+        }
+    </script>
+    <title>Zettabyte-frontend-test</title>
+    <style>
+        .top {
+            background: linear-gradient(90deg, #1C2A45 0%, #2A2E5B 100%);
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card:focus {
+            outline: none;
+            border: 3px solid #4499DF;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="h-screen w-screen bg-white">
+        <div class="top w-full h-[60vh] flex flex-row justify-center items-start py-16 relative">
+            <div class="text flex items-center justify-center flex-col w-2/5">
+                <h1 class="text-center text-5xl text-white">Simple Pricing!</h1>
+                <p class="text-center text-grey mt-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ad
+                    quaerat ipsum ipsa commodi minus possimus nesciunt corrupti eos dolor, voluptatibus assumenda
+                    corporis eum cumque illum ex voluptates tenetur fuga!</p>
+            </div>
+        </div>
+
+        <div class="items w-full bg-transparent px-40 absolute inset-y-72">
+            <div class="cards w-full  flex row gap-9">
+                <!-- 1st card -->
+                <div class="card h-96 bg-white w-1/3 drop-shadow-lg hover:drop-shadow-2xl" tabindex="0">
+                    <div class="card-header bg-darkGrey px-6 py-3">
+                        <div class="text-white text-xl">BASIC</div>
+                    </div>
+                    <div class="card-content px-6">
+                        <div class="card-pricing py-6 flex flex-row justify-center border-b border-grey">
+                            <p class="dollar text-gray-500 self-start text-2xl">$</p>
+                            <p class="price text-8xl font-light self-start">4</p>
+                            <p class="month text-grey font-normal self-end">/ month</p>
+                        </div>
+                        <ul class="card-desc py-6">
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">10</span>
+                                Projects</li>
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">10</span> Pages
+                            </li>
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">100</span> Mb
+                                Disk Space</li>
+                        </ul>
+                        <div class="card-btn w-full  flex  justify-center ">
+                            <button class="bg-blue text-white rounded-lg  py-2 px-7" onclick="showAlert()">BUY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="card h-96 bg-white w-1/3 drop-shadow-lg hover:drop-shadow-2xl" tabindex="0">
+                    <div class="card-header bg-darkGrey px-6 py-3 flex flex-row justify-between items-center">
+                        <p class="text-white text-xl">BASIC</p>
+                        <p class="text-white text-sm">Save 15%</p>
+                    </div>
+                    <div class="card-content px-6">
+                        <div class="card-pricing py-6 flex flex-row justify-center border-b border-grey">
+                            <p class="dollar text-gray-500 self-start text-2xl">$</p>
+                            <p class="price text-8xl font-light self-start">8</p>
+                            <p class="month text-grey font-normal self-end">/ month</p>
+                        </div>
+                        <ul class="card-desc py-6">
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">20</span>
+                                Projects</li>
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">20</span> Pages
+                            </li>
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">200</span> Mb
+                                Disk Space</li>
+                        </ul>
+                        <div class="card-btn w-full  flex  justify-center ">
+                            <button class="bg-blue text-white rounded-lg  py-2 px-7" onclick="showAlert()">BUY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="card h-96 bg-white w-1/3 drop-shadow-lg hover:drop-shadow-2xl" tabindex="0">
+                    <div class="card-header bg-darkGrey px-6 py-3">
+                        <div class="text-white text-xl">ADVANCED</div>
+                    </div>
+                    <div class="card-content px-6">
+                        <div class="card-pricing py-6 flex flex-row justify-center border-b border-grey">
+                            <p class="dollar text-gray-500 self-start text-2xl">$</p>
+                            <p class="price text-8xl font-light self-start">12</p>
+                            <p class="month text-grey font-normal self-end">/ month</p>
+                        </div>
+                        <ul class="card-desc py-6">
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">40</span>
+                                Projects</li>
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">40</span> Pages
+                            </li>
+                            <li class="text-gray-600 text-lg"><span class="text-gray-700 font-semibold">500</span> Mb
+                                Disk Space</li>
+                        </ul>
+                        <div class="card-btn w-full  flex  justify-center ">
+                            <button class="bg-blue text-white rounded-lg  py-2 px-7" onclick="showAlert()">BUY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom w-full h-[70vh] bg-white  flex justify-center items-end py-10">
+            <div class="container content w-[70vw]  flex flex-col items-center">
+                <h2 class="title text-4xl font-light text-darkGrey mb-12">Frequently Asked Question</h2>
+                <div class="col-text  flex flex-row gap-10">
+                    <div class="text">
+                        <h4 class="text-xl text-darkGrey mb-2c">How does free trial work?</h4>
+                        <p class="text-grey text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                            quaerat itaque cumque
+                            est, voluptate mollitia a sunt impedit sed placeat, nostrum necessitatibus laboriosam facere
+                            vero, ut doloremque voluptates? Assumenda neque accusamus veniam sapiente eaque
+                            reprehenderit!</p>
+                    </div>
+                    <div class="text">
+                        <h4 class="text-xl text-darkGrey mb-2c">How does free trial work?</h4>
+                        <p class="text-grey text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                            quaerat itaque cumque
+                            est, voluptate mollitia a sunt impedit sed placeat, nostrum necessitatibus laboriosam facere
+                            vero, ut doloremque voluptates? Assumenda neque accusamus veniam sapiente eaque
+                            reprehenderit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
